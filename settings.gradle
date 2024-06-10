@@ -1,0 +1,29 @@
+rootProject.name = 'esport'
+
+
+// Common module
+include 'common'
+
+// User modules
+include 'user:domain'
+findProject(':user:domain')?.name = 'domain'
+include 'user:outadapter'
+findProject(':user:outadapter')?.name = 'outadapter'
+
+// Request modules
+include 'request:domain'
+findProject(':request:domain')?.name = 'domain'
+include 'request:inadapter'
+findProject(':request:inadapter')?.name = 'inadapter'
+include 'request:outadapter'
+findProject(':request:outadapter')?.name = 'outadapter'
+
+// Country modules
+include 'country:outadapter'
+findProject(':country:outadapter')?.name = 'outadapter'
+include 'country:domain'
+findProject(':country:domain')?.name = 'domain'
+include ':bootstrap'
+include 'country:inadapter'
+findProject(':country:inadapter')?.name = 'inadapter'
+

@@ -1,0 +1,7 @@
+CREATE TABLE request_status
+(
+    id     UUID PRIMARY KEY,
+    code   VARCHAR(255)   NOT NULL UNIQUE,
+    name   VARCHAR(255) NOT NULL UNIQUE,
+    name_ar VARCHAR(255) NOT NULL UNIQUE
+);

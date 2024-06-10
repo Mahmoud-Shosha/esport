@@ -1,0 +1,10 @@
+databaseChangeLog:
+  - include:
+      file: changes/request-status-ddl-v01.sql
+      relativeToChangelogFile: true
+  - include:
+      file: changes/request-status-dml-v01.sql
+      relativeToChangelogFile: true
+  - include:
+      file: changes/request-ddl-v01.sql
+      relativeToChangelogFile: true

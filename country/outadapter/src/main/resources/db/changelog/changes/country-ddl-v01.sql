@@ -1,0 +1,7 @@
+CREATE TABLE country
+(
+    id     UUID PRIMARY KEY,
+    code   VARCHAR(2)   NOT NULL UNIQUE,
+    name   VARCHAR(255) NOT NULL UNIQUE,
+    name_ar VARCHAR(255) NOT NULL UNIQUE
+);
